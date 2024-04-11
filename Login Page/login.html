@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log-in/sign-up</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>CurrentBUZZ</h1>
+            <div class="inner-box">
+                <h2>Sign in</h2>
+                <p>Don't have an account? <span><a href="../Signup Page/signup.html">Sign up</a></span></p>
+                <input type="email" placeholder="Email address" required>
+                <div class="password-input">
+                    <input type="password" placeholder="Password" required class="pass-input" id="password">
+                    <i class="fa-solid fa-eye" onclick="togglePasswordVisibility()" id="eye"></i>
+                </div>
+                <p class="forgot">Forgot password?</p>
+                <button>Sign in</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="result-nav">
+        <div class="nav-left">
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <h1>CurrentBUZZ</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li onclick="window.location.href = '../Home Page/index.html';">Home</li>
+                    <li>India</li>
+                    <li>World</li>
+                    <li>Politics</li>
+                    <li>Entertainment</li>
+                    <li>Sports</li>
+                    <li>Business</li>
+                  </ul>
+               </div>
+        </div>
+
+       <div class="nav-right">
+        <div class="nav-address">
+            <p class="add-first">Country</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p id="add-second">India</p>
+                
+                <div class="dropdown">
+                    <i class="fa-solid fa-angle-down" id="dropButton"></i>    
+                    
+                    <ul id="country-list">
+                        <li class="search-li">
+                            <div class="country-search">
+                                <input type="text" placeholder="Search country..." id="searchInput">
+                                <i class="fa-solid fa-arrow-right country-searchBtn"></i>
+                            </div>
+                        </li>
+                            <li><span>ar</span><p>Argentina</p></li>
+                            <li><span>at</span><p>Austria</p></li>
+                            <li><span>au</span><p>Australia</p></li>
+                            <li><span>be</span><p>Belgium</p></li>
+                            <li><span>bg</span><p>Bulgaria</p></li>
+                            <li><span>br</span><p>Brazil</p></li>
+                            <li><span>ca</span><p>Canada</p></li>
+                            <li><span>ch</span><p>Switzerland</p></li>
+                            <li><span>cn</span><p>China</p></li>
+                            <li><span>co</span><p>Colombia</p></li>
+                            <li><span>cu</span><p>Cuba</p></li>
+                            <li><span>cz</span><p>Czech Republic</p></li>
+                            <li><span>de</span><p>Germany</p></li>
+                            <li><span>eg</span><p>Egypt</p></li>
+                            <li><span>fr</span><p>France</p></li>
+                            <li><span>gb</span><p>United Kingdom</p></li>
+                            <li><span>gr</span><p>Greece</p></li>
+                            <li><span>hk</span><p>Hong Kong</p></li>
+                            <li><span>hu</span><p>Hungary</p></li>
+                            <li><span>id</span><p>Indonesia</p></li>
+                            <li><span>ie</span><p>Ireland</p></li>
+                            <li><span>il</span><p>Israel</p></li>
+                            <li><span>in</span><p>India</p></li>
+                            <li><span>it</span><p>Italy</p></li>
+                            <li><span>jp</span><p>Japan</p></li>
+                            <li><span>kr</span><p>South Korea</p></li>
+                            <li><span>lt</span><p>Lithuania</p></li>
+                            <li><span>lv</span><p>Latvia</p></li>
+                            <li><span>ma</span><p>Morocco</p></li>
+                            <li><span>mx</span><p>Mexico</p></li>
+                            <li><span>my</span><p>Malaysia</p></li>
+                            <li><span>ng</span><p>Nigeria</p></li>
+                            <li><span>nl</span><p>Netherlands</p></li>
+                            <li><span>no</span><p>Norway</p></li>
+                            <li><span>nz</span><p>New Zealand</p></li>
+                            <li><span>ph</span><p>Philippines</p></li>
+                            <li><span>pl</span><p>Poland</p></li>
+                            <li><span>pt</span><p>Portugal</p></li>
+                            <li><span>ro</span><p>Romania</p></li>
+                            <li><span>rs</span><p>Serbia</p></li>
+                            <li><span>ru</span><p>Russia</p></li>
+                            <li><span>sa</span><p>Saudi Arabia</p></li>
+                            <li><span>se</span><p>Sweden</p></li>
+                            <li><span>sg</span><p>Singapore</p></li>
+                            <li><span>si</span><p>Slovenia</p></li>
+                            <li><span>sk</span><p>Slovakia</p></li>
+                            <li><span>th</span><p>Thailand</p></li>
+                            <li><span>tr</span><p>Turkey</p></li>
+                            <li><span>tw</span><p>Taiwan</p></li>
+                            <li><span>ua</span><p>Ukraine</p></li>
+                            <li><span>us</span><p>USA</p></li>
+                            <li><span>ve</span><p>Venezuela</p></li>
+                            <li><span>za</span><p>South Africa</p></li>                         
+                </ul> 
+                  </div>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="search" placeholder="Search news...">
+            <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+        </div>
+        <div class="login">
+            <a href="../Login Page/login.html">Login</a>
+        </div>
+       </div>
+    </nav>
+<div class="full-page">   
+    <!--Search Results-->
+<div id="search-results">
+    
+    <div class="results">
+        <div class="top-text">
+            <p>Displaying 1-10 results out of <span>14234</span> for "<span>india</span>"</p>
+        </div>
+        <hr>
+        <div class="news-results">
+
+        </div>
+    </div>
+    <div class="show-more">
+        <button id="show-more-btn">Show more</button>
+    </div>
+</div>
+</div>
+<!--Footer Section-->
+<div class="footer">
+    <div class="search-box">
+        <input type="search" placeholder="Search Currentbuzz..." id="footer-input">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    <!-- <hr class="hr"> -->
+    <div class="categories-list">
+        <div class="list1">
+            <ul>
+                <h2 class="headline">World</h2>
+<li class="headline">Africa</li>
+<li class="headline">Americas</li>
+<li class="headline">Asia</li>
+<li class="headline">Australia</li>
+<li class="headline">China</li>
+<li class="headline">Europe</li>
+<li class="headline">India</li>
+<li class="headline">Middle East</li>
+<li class="headline">United Kingdom</li>
+            </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <h2 class="headline">India Politics</h2>
+<li class="headline">Facts First</li>
+<li class="headline">India Elections</li>
+<li class="headline">PM Modi</li>
+            </ul>
+        </div>
+       <div class="list3">
+        <ul>
+            <h2 class="headline">Sports</h2>
+<li class="headline">Football</li>
+<li class="headline">Tennis</li>
+<li class="headline">Golf</li>
+<li class="headline">Motorsport</li>
+<li class="headline">Cricket</li>
+<li class="headline">Olympics</li>
+<li class="headline">Esports</li>
+<li class="headline">Hocket</li>
+<li class="headline">Badminton</li>
+        </ul>
+       </div>
+       <div class="list4">
+        <ul>
+            <h2 class="headline">Travel</h2>
+<li class="headline">Destinations</li>
+<li class="headline">Food & Drink</li>
+<li class="headline">Stay</li>
+<li class="headline">News</li>
+<li class="headline">Videos</li>
+        </ul>
+       </div>
+      <div class="list5">
+        <ul>
+            <h2 class="headline">Business</h2>
+<li class="headline">Markets</li>
+<li class="headline">Tech</li>
+<li class="headline">Media</li>
+<li class="headline">Calculators</li>
+<li class="headline">Videos</li>
+        </ul>
+      </div>
+       <div class="list6">
+        <ul>
+            <h2 class="headline">Tech</h2>
+<li class="headline">Inovate</li>
+<li class="headline">Gadget</li>
+<li class="headline">Foreseeable Future</li>
+<li class="headline">Mission:Ahead</li>
+<li class="headline">Upstarts</li>
+<li class="headline">Work Transformed</li>
+<li class="headline">Innovative Cities</li>
+        </ul>
+       </div>
+        <div class="list7">
+            <ul>
+                <h2 class="headline">Entertainment</h2>
+<li class="headline">Movies</li>
+<li class="headline">Television</li>
+<li class="headline">Celebrity</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-contact">
+        <div class="foot-logo">
+            <h1>CurrentBuzz  India</h1>
+        </div>
+        <div class="contact">
+            <div class="contact-text">
+                <p>Follow CurrentBUZZ</p>
+            </div>
+            <div class="contact-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>    
+        </div>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>© 2023 CurrentBUZZ News Network. All Rights Reserved.</p>
+    </div>
+</div>
+<script src="results.js"></script>
+</body>
+</html>

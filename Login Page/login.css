@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #d7d0d0;
+}
+.inner-box input {
+    display: block;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 70vh;
+}
+.login-box{
+    background: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.login-box h1 {
+    margin-top: 50px;
+    color: rgb(188, 85, 85);
+}
+.inner-box {
+    padding: 10px;
+    width: 80%;
+}
+.inner-box > * {
+    margin-top: 30px;
+}
+.inner-box span a {
+    color: #000;
+}
+.inner-box span a:hover {
+    text-decoration: none;
+    color: #5e5e5e;
+}
+.inner-box input{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    outline: 0;
+    margin: 10px auto;
+    padding: 10px;
+}
+.inner-box button{
+    width: 100%;
+    height: 30px;
+    background: red;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.inner-box button:hover {
+    background: rgb(218, 46, 46);
+}
+.forgot:hover{
+    color: #5e5e5e;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.password-input {
+    position: relative;
+}
+  
+.password-input .pass-input {
+    padding-right: 40px;
+}
+  
+.password-input .fa-solid {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
